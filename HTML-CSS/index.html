@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="CSS/normalize.css" /> -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+  </head>
+  <body>
+    <div>
+      <img src="CSS/Company2/lgogo.png" alt="" />
+      <h3>Clearance Form</h3>
+    </div>
+    <form action="https://formspree.io/f/xbjnjadl" method="POST">
+      <div>
+        <label for="name">FName:</label>
+        <input id="Name" type="text" name="one" />
+        <label for="name">MName:</label>
+        <input id="Name" type="text" name="one" />
+        <label for="name">LName:</label>
+        <input id="Name" type="text" name="one" />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="two" />
+      </div>
+      <div>
+        <label for="date">Date:</label>
+        <input id="Date" type="date" name="three" />
+      </div>
+
+      <div>
+        <label for="Reason For Funds">Reason For Funds:</label>
+        <textarea cols="300" rows="10"></textarea>
+      </div>
+
+      <div>
+        <label for="">Country:</label>
+        <input type="text" list="Countries" name="five" />
+        <datalist id="Countries">
+          <option>Canada</option>
+          <option>United States</option>
+        </datalist>
+      </div>
+
+      <div>
+        <label for="">Funds Clearance Preference</label>
+        <select>
+          <option value="">Select a Preference</option>
+          <option value="">12 hours Clearance: $2,200 CAD</option>
+          <option value="">24 hours Clearance: $1,200 CAD</option>
+          <option value="">48 hours Clearance: $850 CAD</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Checkbox if Amount is Correct </label>
+        <input type="checkbox" id="Expected Deposit Amount" name="six" />
+        <label class="label-inline" for="$960,000.00 USD"
+          >$1.2 Million USD</label
+        >
+      </div>
+
+      <fieldset>
+        <legend>Home Address</legend>
+        <input type="text" name="seven" />
+        <legend>Postal Code</legend>
+        <input type="text" name="eight" />
+      </fieldset>
+
+      <label for=""
+        >Upload a PDF of your banking details where funds will be
+        deposited</label
+      >
+      <input type="file" name="nine" />
+
+      <div>
+        <label for="">Government Front ID upload</label>
+        <input type="file" name="ten" />
+        <label for="">Government Back ID upload</label>
+        <input type="file" name="11" />
+      </div>
+
+      <p>Deposit Method: Bitcoin</p>
+      <img src="/CSS/Company2/Bar-code.png" alt="" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
